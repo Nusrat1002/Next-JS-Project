@@ -1,82 +1,160 @@
 [
-    {
-        "category": "Electronics",
+  {
+    "category": "Electronics",
+    "slug": "electronics",
+    "subcategories": [
+      {
+        "name": "Mobile Phones",
+        "slug": "mobile-phones",
         "subcategories": [
-            "Mobile Phones",
-            "Laptops",
-            "Televisions",
-            "Cameras",
-            "Audio Equipment"
+          { "name": "Android Phones", "slug": "android-phones" },
+          { "name": "iPhones", "slug": "iphones" }
         ]
-    },
-    {
-        "category": "Fashion",
+      },
+      { "name": "Laptops", "slug": "laptops" },
+      { "name": "Televisions", "slug": "televisions" },
+      {
+        "name": "Cameras",
+        "slug": "cameras",
         "subcategories": [
-            "Men's Clothing",
-            "Female's Clothing",
-            "Shoes",
-            "Accessories",
-            "Watches"
+          { "name": "DSLR", "slug": "dslr" },
+          { "name": "Mirrorless", "slug": "mirrorless" }
         ]
-    },
-    {
-        "category": "Home & Kitchen",
+      },
+      { "name": "Audio Equipment", "slug": "audio-equipment" }
+    ]
+  },
+  {
+    "category": "Fashion",
+    "slug": "fashion",
+    "subcategories": [
+      {
+        "name": "Men's Clothing",
+        "slug": "mens-clothing",
         "subcategories": [
-            "Furniture",
-            "Kitchen Appliences",
-            "Home Decor",
-            "Bedding",
-            "Lighting"
+          { "name": "T-Shirts", "slug": "t-shirts" },
+          { "name": "Jeans", "slug": "jeans" }
         ]
-    },
-    {
-        "category": "Sports & Outdoors",
+      },
+      { "name": "Female's Clothing", "slug": "females-clothing" },
+      {
+        "name": "Shoes",
+        "slug": "shoes",
         "subcategories": [
-            "Exercies Equipment",
-            "Outdoor Gear",
-            "Team Sports",
-            "Cycling",
-            "Camping"
+          { "name": "Sneakers", "slug": "sneakers" },
+          { "name": "Formal Shoes", "slug": "formal-shoes" }
         ]
-    },
-    {
-        "category": "Books",
+      },
+      { "name": "Accessories", "slug": "accessories" },
+      { "name": "Watches", "slug": "watches" }
+    ]
+  },
+  {
+    "category": "Home & Kitchen",
+    "slug": "home-kitchen",
+    "subcategories": [
+      {
+        "name": "Furniture",
+        "slug": "furniture",
         "subcategories": [
-            "Fiction",
-            "Non-Fiction",
-            "Children's Books",
-            "Educational",
-            "Comics"
+          { "name": "Beds", "slug": "beds" },
+          { "name": "Sofas", "slug": "sofas" }
         ]
-    },
-    {
-        "category": "Toys & Games",
+      },
+      { "name": "Kitchen Appliences", "slug": "kitchen-appliences" },
+      { "name": "Home Decor", "slug": "home-decor" },
+      { "name": "Bedding", "slug": "bedding" },
+      { "name": "Lighting", "slug": "lighting" }
+    ]
+  },
+  {
+    "category": "Sports & Outdoors",
+    "slug": "sports-outdoors",
+    "subcategories": [
+      { "name": "Exercies Equipment", "slug": "exercies-equipment" },
+      {
+        "name": "Outdoor Gear",
+        "slug": "outdoor-gear",
         "subcategories": [
-            "Action Figure",
-            "Board Games",
-            "Dolls",
-            "Puzzles",
-            "Outdoor Play"
+          { "name": "Tents", "slug": "tents" },
+          { "name": "Backpacks", "slug": "backpacks" }
         ]
-    },
-    {
-        "category": "Health & Beauty",
+      },
+      { "name": "Team Sports", "slug": "team-sports" },
+      { "name": "Cycling", "slug": "cycling" },
+      { "name": "Camping", "slug": "camping" }
+    ]
+  },
+  {
+    "category": "Books",
+    "slug": "books",
+    "subcategories": [
+      { "name": "Fiction", "slug": "fiction" },
+      {
+        "name": "Non-Fiction",
+        "slug": "non-fiction",
         "subcategories": [
-            "Skincare",
-            "Haircare",
-            "Makeup",
-            "Vitamins & Suppliments",
-            "Personal Care"
+          { "name": "Biography", "slug": "biography" },
+          { "name": "Self Help", "slug": "self-help" }
         ]
-    },
-    {
-        "category": "Automotive",
+      },
+      { "name": "Children's Books", "slug": "childrens-books" },
+      { "name": "Educational", "slug": "educational" },
+      { "name": "Comics", "slug": "comics" }
+    ]
+  },
+  {
+    "category": "Toys & Games",
+    "slug": "toys-games",
+    "subcategories": [
+      { "name": "Action Figure", "slug": "action-figure" },
+      {
+        "name": "Board Games",
+        "slug": "board-games",
         "subcategories": [
-            "Car Accessories",
-            "Motorcycle Parts",
-            "Tires & Wheels",
-            "Car Electronics",
-            "Tools & Equipment"
+          { "name": "Strategy Games", "slug": "strategy-games" },
+          { "name": "Party Games", "slug": "party-games" }
         ]
-    }
+      },
+      { "name": "Dolls", "slug": "dolls" },
+      { "name": "Puzzles", "slug": "puzzles" },
+      { "name": "Outdoor Play", "slug": "outdoor-play" }
+    ]
+  },
+  {
+    "category": "Health & Beauty",
+    "slug": "health-beauty",
+    "subcategories": [
+      { "name": "Skincare", "slug": "skincare" },
+      {
+        "name": "Haircare",
+        "slug": "haircare",
+        "subcategories": [
+          { "name": "Shampoo", "slug": "shampoo" },
+          { "name": "Conditioner", "slug": "conditioner" }
+        ]
+      },
+      { "name": "Makeup", "slug": "makeup" },
+      { "name": "Vitamins & Suppliments", "slug": "vitamins-suppliments" },
+      { "name": "Personal Care", "slug": "personal-care" }
+    ]
+  },
+  {
+    "category": "Automotive",
+    "slug": "automotive",
+    "subcategories": [
+      {
+        "name": "Car Accessories",
+        "slug": "car-accessories",
+        "subcategories": [
+          { "name": "Seat Covers", "slug": "seat-covers" },
+          { "name": "Car Mats", "slug": "car-mats" }
+        ]
+      },
+      { "name": "Motorcycle Parts", "slug": "motorcycle-parts" },
+      { "name": "Tires & Wheels", "slug": "tires-wheels" },
+      { "name": "Car Electronics", "slug": "car-electronics" },
+      { "name": "Tools & Equipment", "slug": "tools-equipment" }
+    ]
+  }
 ]
