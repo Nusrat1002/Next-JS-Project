@@ -1,0 +1,82 @@
+[
+    {
+        "category": "Electronics",
+        "subcategories": [
+            "Mobile Phones",
+            "Laptops",
+            "Televisions",
+            "Cameras",
+            "Audio Equipment"
+        ]
+    },
+    {
+        "category": "Fashion",
+        "subcategories": [
+            "Men's Clothing",
+            "Female's Clothing",
+            "Shoes",
+            "Accessories",
+            "Watches"
+        ]
+    },
+    {
+        "category": "Home & Kitchen",
+        "subcategories": [
+            "Furniture",
+            "Kitchen Appliences",
+            "Home Decor",
+            "Bedding",
+            "Lighting"
+        ]
+    },
+    {
+        "category": "Sports & Outdoors",
+        "subcategories": [
+            "Exercies Equipment",
+            "Outdoor Gear",
+            "Team Sports",
+            "Cycling",
+            "Camping"
+        ]
+    },
+    {
+        "category": "Books",
+        "subcategories": [
+            "Fiction",
+            "Non-Fiction",
+            "Children's Books",
+            "Educational",
+            "Comics"
+        ]
+    },
+    {
+        "category": "Toys & Games",
+        "subcategories": [
+            "Action Figure",
+            "Board Games",
+            "Dolls",
+            "Puzzles",
+            "Outdoor Play"
+        ]
+    },
+    {
+        "category": "Health & Beauty",
+        "subcategories": [
+            "Skincare",
+            "Haircare",
+            "Makeup",
+            "Vitamins & Suppliments",
+            "Personal Care"
+        ]
+    },
+    {
+        "category": "Automotive",
+        "subcategories": [
+            "Car Accessories",
+            "Motorcycle Parts",
+            "Tires & Wheels",
+            "Car Electronics",
+            "Tools & Equipment"
+        ]
+    }
+]
