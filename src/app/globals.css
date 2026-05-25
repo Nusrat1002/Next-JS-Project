@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 /* ================================================================== NAVBAR ============================================================================================= */
+body{
+  overflow-x: hidden;
+}
+
 nav {
   background: #0d9488;
   padding: 0 2rem;
@@ -33,7 +37,6 @@ nav > ul > li > a:hover {
 }
 
 nav ul ul {
-  display: none;
   position: absolute;
   top: 100%;
   left: 0;
@@ -45,10 +48,26 @@ nav ul ul {
   border-radius: 0 0 8px 8px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 0.25s ease, visibility 0.25s ease, transform 0.25s ease;
 }
 
 nav li:hover > ul {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+nav ul ul li {
+  border-bottom: 1px solid #f1f5f9;
+}
+
+nav ul ul li:last-child {
+  border-bottom: none;
 }
 
 nav ul ul li a {
@@ -65,18 +84,23 @@ nav ul ul li a:hover {
   color: #0d9488;
 }
 
-nav ul ul li {
-  border-bottom: 1px solid #f1f5f9;
-}
-
-nav ul ul li:last-child {
-  border-bottom: none;
-}
-
 nav ul ul ul {
+  position: absolute;
   top: 0;
   left: 100%;
   border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(-10px);
+  transition: opacity 0.25s ease, visibility 0.25s ease, transform 0.25s ease;
+}
+
+nav ul ul li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0);
 }
 
 nav ul ul li:has(ul) > a::after {
