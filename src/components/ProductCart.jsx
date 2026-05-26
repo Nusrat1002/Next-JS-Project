@@ -1,5 +1,6 @@
 import React from 'react' 
 import Image from 'next/image';
+import Link from 'next/link';
 
 const ProductCart =  ({product}) => {
   return (
@@ -15,11 +16,11 @@ const ProductCart =  ({product}) => {
           />
         </a>
         <div className="p-5">
-          <a href="#">
+          <Link href={`/shop/${product.id}`}>
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               {product.title}
             </h5>
-          </a>
+          </Link>
           <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
             {product.description.slice(1,50)+"...."}
           </p>
