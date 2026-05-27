@@ -28,6 +28,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <Header/>
         {children}
+        <div id="myPortal" />
       </body>
     </html>
   );
