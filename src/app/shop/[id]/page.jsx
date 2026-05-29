@@ -6,7 +6,7 @@ export default async function Page({ params }) {
   const { id } = await params;
   const product = await getProduct(id);
   return (
-                                                  <div>
+                                                  <>
   <style dangerouslySetInnerHTML={{__html: "\n        .nav-for-slider .swiper-slide {\n            height: auto;\n            width: auto;\n            cursor: pointer;\n           \n        }\n        .swiper-wrapper{\n            height: auto;\n        }\n        .nav-for-slider .swiper-slide img{\n            border:2px solid transparent;\n            border-radius: 10px;\n           \n        }\n        .nav-for-slider .swiper-slide-thumb-active img{\n           \n            border-color: rgb(79 70 229 );\n        }\n    " }} />  
   <section className="py-24">
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -86,7 +86,7 @@ export default async function Page({ params }) {
       </div>
     </div>
   </section>
-</div>
+</>
 
                                             
 ); 

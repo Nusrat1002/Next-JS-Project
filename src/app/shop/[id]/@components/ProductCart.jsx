@@ -3,8 +3,13 @@
 import React from "react";
 import ClientPortal from "@/modal/ClientPortal";
 import Login from "@/components/Login";
+import { useState } from "react";
 
 const ProductCart = () => {
+  const [showLogin, setShowLogin] = useState(false);
+  const handleCart = () => {
+    setShowLogin(true);
+  };
   return (
     <div>
       <div className="flex items-center flex-col min-[400px]:flex-row gap-3 mb-3 min-[400px]:mb-8">
@@ -77,7 +82,10 @@ const ProductCart = () => {
             </svg>
           </button>
         </div>
-        <button className="group py-3 px-5 rounded-full bg-indigo-50 text-indigo-600 font-semibold text-lg w-full flex items-center justify-center gap-2 shadow-sm shadow-transparent transition-all duration-500 hover:shadow-indigo-300 hover:bg-indigo-100">
+        <button
+          className="group py-3 px-5 rounded-full bg-indigo-50 text-indigo-600 font-semibold text-lg w-full flex items-center justify-center gap-2 shadow-sm shadow-transparent transition-all duration-500 hover:shadow-indigo-300 hover:bg-indigo-100"
+          onClick={handleCart}
+        >
           <svg
             className="stroke-indigo-600 transition-all duration-500 group-hover:stroke-indigo-600"
             width={22}
@@ -95,10 +103,12 @@ const ProductCart = () => {
           </svg>
           Add to cart
         </button>
-        <ClientPortal selector={"myPortal"}>
-          <div className="overflow-y-hidden h-dvh w-dvw bg-[#999999] fixed top-0 left-0">
-            <Login />
-          </div>
+        <ClientPortal
+          selector={"myPortal"}
+          show={showLogin}
+          setShow={setShowLogin}
+        >
+          <Login />
         </ClientPortal>
       </div>
       <button className="text-center w-full px-5 py-4 rounded-[100px] bg-indigo-600 flex items-center justify-center font-semibold text-lg text-white shadow-sm shadow-transparent transition-all duration-500 hover:bg-indigo-700 hover:shadow-indigo-300">

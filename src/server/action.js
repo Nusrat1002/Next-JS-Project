@@ -34,4 +34,6 @@ const getProduct = async (id) => {
   }
 };
 
+
+
 export { getProducts, getProduct };
