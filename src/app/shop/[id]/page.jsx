@@ -80,7 +80,7 @@ export default async function Page({ params }) {
               <button className="border border-gray-200 whitespace-nowrap text-gray-900 text-sm leading-6 py-2.5 rounded-full px-5 text-center w-full font-semibold shadow-sm shadow-transparent transition-all duration-300 hover:bg-gray-50 hover:shadow-gray-300">
                 Depth: {product.depth}</button>
             </div>
-            <ProductCart />
+            <ProductCart productId={product.id} />
           </div>
         </div>
       </div>

@@ -4,12 +4,23 @@ import React from "react";
 import ClientPortal from "@/modal/ClientPortal";
 import Login from "@/components/Login";
 import { useState } from "react";
+import { useAuth } from "@/providers/AuthProvider";
 
-const ProductCart = () => {
+const ProductCart = ({ productId }) => {
   const [showLogin, setShowLogin] = useState(false);
-  const handleCart = () => {
-    setShowLogin(true);
+  const { auth } = useAuth();
+  const [quantity, setQuantity] = useState(1);
+  const handleCart = async () => {
+    if (auth) {
+      await addToCart({
+        userId: auth.id,
+        products: [{ id: productId, quantity }],
+      });
+    } else {
+      setShowLogin(true);
+    }
   };
+
   return (
     <div>
       <div className="flex items-center flex-col min-[400px]:flex-row gap-3 mb-3 min-[400px]:mb-8">
@@ -48,7 +59,8 @@ const ProductCart = () => {
           <input
             type="text"
             className="font-semibold text-gray-900 text-lg py-3 px-2 w-full min-[400px]:min-w-[75px] h-full bg-transparent placeholder:text-gray-900 text-center hover:text-indigo-600 outline-0 hover:placeholder:text-indigo-600"
-            placeholder={1}
+            value={quantity}
+            onChange={(e) => setQuantity(e.target.value)}
           />
           <button className="group py-[14px] px-3 w-full border-l border-gray-400 rounded-r-full h-full flex items-center justify-center bg-white shadow-sm shadow-transparent transition-all duration-300 hover:bg-gray-50 hover:shadow-gray-300">
             <svg
